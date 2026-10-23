@@ -1,0 +1,19 @@
+# Logs e temporários
+node_modules/
+*.log
+npm-debug.log*
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Variáveis de ambiente e segredos
+.env
+.env.local
+*.pem
+
+# IDEs e Editores
+.vscode/
+.idea/
+
