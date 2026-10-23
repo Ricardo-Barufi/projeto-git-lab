@@ -25,6 +25,7 @@ body {
 }
 
 .card {
+  position: relative;
   background: var(--card-bg);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
@@ -34,6 +35,42 @@ body {
   text-align: center;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
 }
+
+.theme-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: transform 0.2s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.15);
+}
+
+body.light-theme {
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --accent: #0284c7;
+}
+
+body.light-theme .card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .btn {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: var(--text);
+}
+
 
 .avatar-placeholder {
   width: 80px;
