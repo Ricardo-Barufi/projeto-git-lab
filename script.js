@@ -5,3 +5,4 @@ toggleBtn.addEventListener('click', () => {
   const isLight = document.body.classList.contains('light-theme');
   toggleBtn.textContent = isLight ? '☀️' : '🌙';
 });
+
